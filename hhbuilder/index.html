@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Household builder</title>
+        <style>
+            .debug {
+                font-family: monospace;
+                border: 1px solid black;
+                padding: 10px;
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Household builder</h1>
+        <div class="builder">
+            <ol class="household"></ol>
+            <form>
+                <div>
+                    <label for="age">Age
+                        <input type="text" name="age" id="age" />
+                    </label>
+                </div>
+                <div>
+                    <label for="rel">Relationship
+                        <select name="rel" id="rel">
+                            <option value="" selected disabled>---</option>
+                            <option value="self">Self</option>
+                            <option value="spouse">Spouse</option>
+                            <option value="child">Child</option>
+                            <option value="parent">Parent</option>
+                            <option value="grandparent">Grandparent</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </label>
+                </div>
+                <div>
+                    <label for="smoker">Smoker?
+                        <input type="checkbox" name="smoker" id="smoker" />
+                    </label>
+                </div>
+                <div>
+                    <button class="add">add</button>
+                </div>
+                <div>
+                    <button type="submit">submit</button>
+                </div>
+            </form>
+        </div>
+        <pre class="debug"></pre>
+        <script src="./index.js"></script>
+    </body>
+</html>

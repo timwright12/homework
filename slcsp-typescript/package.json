@@ -1,0 +1,22 @@
+{
+  "name": "slcsp",
+  "version": "1.0.0",
+  "description": "Homework assignment for SLCSP (Ad Hoc)",
+  "main": "build/index.js",
+  "scripts": {
+    "start:run:build": "tsc -w",
+    "start:run:dev": "nodemon build/index.js",
+    "start:dev": "concurrently npm:start:run:*",
+    "start": "tsc && node build/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^16.6.2",
+    "concurrently": "^8.2.2",
+    "nodemon": "^3.0.3"
+  },
+  "dependencies": {
+    "fast-csv": "^5.0.1"
+  }
+}

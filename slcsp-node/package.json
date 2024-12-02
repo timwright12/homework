@@ -1,0 +1,19 @@
+{
+  "name": "slcsp",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "generate": "pkg index.js -o slcsp-exe"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "csv-parse": "^5.5.6",
+    "eslint": "^9.13.0"
+  },
+  "devDependencies": {
+    "pkg": "^5.8.1"
+  }
+}
